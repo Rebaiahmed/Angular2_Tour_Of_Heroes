@@ -41,4 +41,10 @@ goBack() : void {
 }
 
 
+Save() : void {
+    this.heroService.update(this.hero)
+      .then(() => this.goBack());
+}
+
+
 }
